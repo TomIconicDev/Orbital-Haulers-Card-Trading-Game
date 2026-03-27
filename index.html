@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="OH Cargo Cards" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="assets/icons/icon-192.png" />
+    <title>Orbital Haulers: Cargo Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Orbital Haulers</p>
+          <h1>Cargo Cards</h1>
+        </div>
+        <button id="daily-reward-btn" class="btn btn-accent">Daily Reward</button>
+      </header>
+
+      <main id="screen-root" class="screen-root" aria-live="polite"></main>
+
+      <nav class="bottom-nav" aria-label="Primary">
+        <button class="nav-btn is-active" data-screen="home">Home</button>
+        <button class="nav-btn" data-screen="collection">Collection</button>
+        <button class="nav-btn" data-screen="packs">Packs</button>
+        <button class="nav-btn" data-screen="contracts">Contracts</button>
+        <button class="nav-btn" data-screen="yard">Yard</button>
+        <button class="nav-btn" data-screen="settings">Settings</button>
+      </nav>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal" class="modal hidden" aria-hidden="true"></div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
